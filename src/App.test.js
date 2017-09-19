@@ -4,6 +4,7 @@ import App from './App';
 import { shallow } from 'enzyme'
 
 import { sum } from './sum'
+import Header from './Header'
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -23,3 +24,9 @@ it('renders welcome message', () => {
   const welcome = <h2>Welcome to React</h2>
   expect(wrapper.contains(welcome)).toEqual(true)
 })
+
+it('renders the <Header/>', () => {
+  shallow(<Header />)
+})
+
+
