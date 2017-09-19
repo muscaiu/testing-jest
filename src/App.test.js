@@ -17,3 +17,9 @@ it('renders shallow without crashing', () => {
 it('sums numbers', () => {
   expect(sum(1, 2)).toEqual(3)
 })
+
+it('renders welcome message', () => {
+  const wrapper = shallow(<App />)
+  const welcome = <h2>Welcome to React</h2>
+  expect(wrapper.contains(welcome)).toEqual(true)
+})
