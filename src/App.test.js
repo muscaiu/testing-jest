@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { shallow } from 'enzyme'
+import renderer from 'react-test-renderer'
 
 import { sum } from './sum'
 import Header from './Header'
@@ -29,4 +30,7 @@ it('renders the <Header/>', () => {
   shallow(<Header />)
 })
 
-
+it('renders <App/> snapshot', () => {
+  const tree = renderer.create(<App />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
