@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders <Header/> snapshot 1`] = `
-<div>
-  Header
-</div>
+<p>
+  state in Header
+</p>
 `;

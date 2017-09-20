@@ -15,9 +15,9 @@ exports[`renders <App/> snapshot 1`] = `
     <h2>
       Welcome to React
     </h2>
-    <div>
-      Header
-    </div>
+    <p>
+      state in Header
+    </p>
   </div>
   <p
     className="App-intro"
@@ -27,6 +27,9 @@ exports[`renders <App/> snapshot 1`] = `
       src/App.js
     </code>
      and save to reload.
+  </p>
+  <p>
+    state in App
   </p>
 </div>
 `;
